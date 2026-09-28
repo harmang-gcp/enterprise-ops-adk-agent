@@ -1,0 +1,9 @@
+{
+  "criteria": {
+    "tool_trajectory_avg_score": 1.0,
+    "response_match_score": 0.85,
+    "safety_and_pii_compliance_score": 1.0
+  },
+  "evaluation_service": "google.adk.evaluation.AgentEvaluator",
+  "golden_dataset_path": "eval/golden_dataset.json"
+}

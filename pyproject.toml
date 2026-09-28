@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enterprise-ops-adk-agent"
+version = "1.0.0"
+description = "Enterprise Cloud SRE & Incident Response Multi-Agent System built with Google ADK"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "google-adk>=1.0.0",
+    "google-genai>=1.0.0",
+    "pydantic>=2.7.0",
+    "google-cloud-secret-manager>=2.20.0",
+    "google-cloud-dlp>=3.18.0",
+    "google-cloud-firestore>=2.16.0",
+    "google-cloud-discoveryengine>=0.11.0",
+    "google-cloud-logging>=3.10.0",
+    "python-json-logger>=2.0.7",
+    "opentelemetry-api>=1.25.0",
+    "opentelemetry-sdk>=1.25.0",
+    "opentelemetry-exporter-gcp-trace>=1.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+    "pytest-asyncio>=0.23.0",
+    "agent-starter-pack>=0.5.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
