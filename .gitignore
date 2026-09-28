@@ -1,13 +1,16 @@
-__pycache__/
-*.py[cod]
-*$py.class
-.venv/
-venv/
+# Ignore environment secrets
 .env
-*.egg-info/
-dist/
-build/
-.pytest_cache/
-.terraform/
-*.tfstate
-*.tfstate.*
+.env.
+
+
+# Ignore OS / Editor junk
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+
+# Ignore dependencies
+node_modules/
+__pycache__/
+venv/
